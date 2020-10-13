@@ -1,0 +1,126 @@
+
+.CajaCompleta{
+display: flex;
+flex-flow: row;
+
+}
+.PrimerContenedor{
+display: flex;
+flex-flow: column;
+width: 70%;
+height: 100%;
+margin-left: 20px;
+
+}
+.BoxOlla{
+display: flex;
+flex-flow: column;
+    
+}
+.BoxH1Olla{
+display: flex;
+flex-flow: row
+
+
+}
+
+.BoxH1Olla h1{
+margin-top: -15px;
+
+}
+.BoxiconOlla{
+    margin-top: -30px;
+
+}
+.ImgiconOlla{
+width: 100%;
+
+}
+
+
+form {
+display: flex;
+flex-flow: row ;
+margin-top: 10px;
+
+
+}
+
+.PrimerContenedor2{
+display: flex;
+flex-flow: row;
+margin-top: 40px;
+
+}
+.InputTrabajemos{
+border-radius: 5px;
+border: none;
+
+}
+.Contactotrabajemos{
+ display: flex;
+ flex-flow: row;
+    
+    
+}
+
+
+
+.CajaTexto{
+margin-left: 60px;
+align-content: center;
+
+
+}
+
+
+.SegundoContenedor{
+width: 30%;
+height: 100%;
+
+}
+.ImgOlla{
+width: 100%;
+
+}
+
+
+.CajaTexto h4{
+
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+.CajaTexto p{
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0px;
+text-align: left;
+}
+
+a{
+    color: #ff5920;
+}
+
+.BtnTrabajar{ 
+    flex: 1 1 auto;
+    font-family: "Montserrat", sans-serif !important ;
+    border: 2px solid #ff5920;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color:  #ff5920;
+    height: 45px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}

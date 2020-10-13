@@ -9,7 +9,7 @@
     /* background-color: #FCF5EB; */
     /* background-color: lightgray; */
     overflow: hidden;
-    position: fixed;
+    position: fixed; 
     top: 0;
     width: 100%; 
     
@@ -39,6 +39,8 @@
     font-weight: bold;
     text-decoration: none;
     margin-top: 30px;
+    outline: none;
+    cursor: pointer;
 }
   
 .opciones{
@@ -72,6 +74,7 @@
     width: 180px;
     margin: 15px 20px 0 20px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .BtnDonar a {
