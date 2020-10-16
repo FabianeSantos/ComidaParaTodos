@@ -4,6 +4,7 @@ import HomeSumate from './Views/Sumate/HomeSumate';
 import Home from './Views/Home/Home';
 import SumateHuertos from '../src/Views/Sumate/SumateHuertos'
 import HomeRelatos from './Views/Relatos/HomeRelatos';
+import SumateTrabajemos from './Views/Sumate/SumateTrabajemos';
 
 const Routes = () => {
     return (
@@ -12,7 +13,8 @@ const Routes = () => {
             <Switch>
 
                 <Route path='/sumate' component={HomeSumate} />
-                <Route path='/huertos' component={SumateHuertos} />
+                <Route path='/dona-huertos' component={SumateHuertos} />
+                <Route path='/trabajemos' component={SumateTrabajemos} />
                 <Route path='/relatos' component={HomeRelatos} /> 
                 <Route path='/' component={Home} />
 

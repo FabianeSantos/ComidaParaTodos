@@ -46,7 +46,9 @@ const Header = () => {
 
               <li className= {styles.enlacePrincipal}> Testimonios
               <ul className={styles.alternativas}>
-                <li className={styles.opciones} value=''> Relatos </li>
+                {/* <li className={styles.opciones} value=''> Relatos </li> */}
+                {/* <a href="/relatos">Relatos</a> */}
+                <Link to="/relatos">Relatos</Link>
                 <li className={styles.opciones} value=''> Prensa/Redes sociales </li>
               </ul>
             </li>
@@ -55,11 +57,15 @@ const Header = () => {
               <ul className={styles.alternativas}>
                 <li className={styles.opciones} value=''> Donar un almuerzo </li>
                 <li className={styles.opciones} value=''> Donar alimentos </li>
-                <li className={styles.opciones} value=''> Donar huertos urbanos </li>
+                {/* <li className={styles.opciones} value=''> Donar huertos urbanos </li> */}
+                {/* <a href="/dona-huertos"> Donar huertos urbanos  </a> */}
+                <Link to="/dona-huertos"> Donar huertos urbanos</Link>
                 <li className={styles.opciones} value=''> Donar capacitaciones </li>
                 <li className={styles.opciones} value=''> Dona tu talento </li>
                 <li className={styles.opciones} value=''> Multiplica la donación y apadrina una comunidad </li>
-                <li className={styles.opciones} value=''> Trabaja con nosotros </li>
+                {/* <li className={styles.opciones} value=''> Trabaja con nosotros </li> */}
+                {/* <a href="/trabajemos">Trabaja con nosotros </a> */}
+                <Link to="/trabajemos"> Trabaja con nosotros</Link>
                 <li className={styles.opciones} value=''> Recibe la ayuda </li>
               </ul>
             </li>

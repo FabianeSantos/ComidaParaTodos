@@ -6,18 +6,19 @@ import TwitterC from '../img/TwitterIcon.png';
 import mailC from '../img/mailIcon.png';
 
 import LogoPalabra from "./LogoPalabra";
+import { Link } from "react-router-dom";
 
 const HeaderSolid = () => {
   return (
     <div className={styles.containerHeader}>
       <div className={styles.logonav}>
         <div className={styles.Cajalogo}>
-          <LogoPalabra/>
+          <LogoPalabra />
         </div>
 
         <div className={styles.navbar}>
-          <ul className={styles.menuPrincipal}>         
-              <li className= {styles.enlacePrincipal}> Red Solidaria
+          <ul className={styles.menuPrincipal}>
+            <li className={styles.enlacePrincipal}> Red Solidaria
               <ul className={styles.alternativas}>
                 <li className={styles.opciones} value=''> Qué nos preocupa </li>
                 <li className={styles.opciones} value=''> Situación País </li>
@@ -27,8 +28,8 @@ const HeaderSolid = () => {
                 <li className={styles.opciones} value=''> Alianzas </li>
               </ul>
             </li>
-         
-              <li className= {styles.enlacePrincipal}> Campañas
+
+            <li className={styles.enlacePrincipal}> Campañas
               <ul className={styles.alternativas}>
                 <li className={styles.opciones} value=''> Campaña de emergencia </li>
                 <li className={styles.opciones} value=''> Navidad para todos </li>
@@ -36,37 +37,42 @@ const HeaderSolid = () => {
               </ul>
             </li>
 
-              <li className= {styles.enlacePrincipal}> Proyectos
+            <li className={styles.enlacePrincipal}> Proyectos
               <ul className={styles.alternativas}>
                 <li className={styles.opciones} value=''> Banco de alimentos </li>
                 <li className={styles.opciones} value=''> Escuela de comida para todos </li>
               </ul>
             </li>
 
-              <li className= {styles.enlacePrincipal}> Testimonios
+            <li className={styles.enlacePrincipal}> Testimonios
               <ul className={styles.alternativas}>
-                <li className={styles.opciones} value=''> Relatos </li>
+               {/* <li className={styles.opciones} value=''> Relatos </li> */}
+                {/* <a href="/relatos">Relatos</a> */}
+                <Link to="/relatos">Relatos</Link>
                 <li className={styles.opciones} value=''> Prensa/Redes sociales </li>
               </ul>
             </li>
-          
-              <li className= {styles.enlacePrincipal}> Súmate
+
+            <li className={styles.enlacePrincipal}> Súmate
               <ul className={styles.alternativas}>
                 <li className={styles.opciones} value=''> Donar un almuerzo </li>
                 <li className={styles.opciones} value=''> Donar alimentos </li>
-                <li className={styles.opciones} value=''> Donar huertos urbanos </li>
+                {/* <li className={styles.opciones} value=''> Donar huertos urbanos </li> */}
+                {/* <a href="/dona-huertos"> Donar huertos urbanos  </a> */}
+                <Link to="/dona-huertos"> Donar huertos urbanos</Link>
                 <li className={styles.opciones} value=''> Donar capacitaciones </li>
                 <li className={styles.opciones} value=''> Dona tu talento </li>
                 <li className={styles.opciones} value=''> Multiplica la donación y apadrina una comunidad </li>
-                <li className={styles.opciones} value=''> Trabaja con nosotros </li>
+                {/* <li className={styles.opciones} value=''> Trabaja con nosotros </li> */}
+                <Link to="/trabajemos"> Trabaja con nosotros</Link>
                 <li className={styles.opciones} value=''> Recibe la ayuda </li>
               </ul>
             </li>
           </ul>
         </div>
-       
+
         <div className={styles.SocialContainer}>
-        <img src={FacebookC} className={styles.SocialIcon} alt="Facebook"></img>
+          <img src={FacebookC} className={styles.SocialIcon} alt="Facebook"></img>
           <a href='https://www.instagram.com/comida_para_todos_cl/' target='_blank'>
             <img src={InstagramC} className={styles.SocialIcon} alt="Instagram" />
           </a>
@@ -77,11 +83,11 @@ const HeaderSolid = () => {
         </div>
 
         <button className={styles.BtnDonar}>
-            <a href="https://yodono.cl/proyecto/207/CultivaComidaparaTods"
-              target="_blank" >
-              Donar un almuerzo
+          <a href="https://yodono.cl/proyecto/207/CultivaComidaparaTods"
+            target="_blank" >
+            Donar un almuerzo
                </a>
-          </button>
+        </button>
       </div>
     </div>
   );

@@ -77,5 +77,6 @@
 }
 
 .CajaFlecha{
+    z-index: 2000;
    margin-left: 50%;
 }
